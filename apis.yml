@@ -1,7 +1,29 @@
 aid: avs
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/avs.png
 name: AVS
-description: AVS is a company surfaced as a portfolio company of battery-ventures and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: 'AVS (listed by Battery Ventures as "AVS, Inc.") is a former Battery Ventures
+  portfolio company. Battery''s public list of all companies marks the entry with an
+  asterisk, which its own legend defines as "Denotes an exited investment," so AVS is
+  a historical holding rather than an active one. Enrichment research on 2026-07-20 —
+  Battery''s company list and WordPress API, targeted web search, and probes of
+  battery.com/company/avs and battery.com/portfolio/avs (both HTTP 404) — surfaced no
+  company website, no developer portal, no documentation, and no API, specification,
+  SDK, or other machine-readable artifact that can be attributed to this specific AVS
+  with confidence. The name is heavily overloaded across unrelated firms (medical
+  device, life-science services, audio-visual, voice recognition), and none of those
+  could be tied back to the Battery investment. This profile is therefore retained as
+  an identity-only record with no API surface; it is not a scored API provider.'
 url: https://raw.githubusercontent.com/api-evangelist/avs/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +31,34 @@ x-backed-by:
 - battery-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-investment-status: exited
+x-api-surface: none
+x-research-notes: 'Battery Ventures list of all companies (https://www.battery.com/list-of-all-companies/)
+  entry "AVS, Inc. *"; footnote legend "* Denotes an exited investment." No company
+  page on battery.com (404). No website identified; no hosts available to probe for
+  well-known, domain-security, or specification artifacts.'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Venture Backed
+- Battery Ventures
+- Portfolio Company
+- Exited Investment
+- Private Equity
 apis: []
+common:
+- type: InvestorPortfolio
+  name: Battery Ventures list of all companies
+  url: https://www.battery.com/list-of-all-companies/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
