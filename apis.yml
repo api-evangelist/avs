@@ -37,7 +37,7 @@ x-research-notes: 'Battery Ventures list of all companies (https://www.battery.c
   entry "AVS, Inc. *"; footnote legend "* Denotes an exited investment." No company
   page on battery.com (404). No website identified; no hosts available to probe for
   well-known, domain-security, or specification artifacts.'
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-20'
 tags:
